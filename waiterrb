@@ -1,0 +1,41 @@
+require 'pry'
+class Waiter
+ 
+  attr_accessor :name, :yrs_experience
+ 
+  @@all = []
+ 
+  def initialize(name, yrs_experience)
+    @name = name
+    @yrs_experience = yrs_experience
+    @@all << self
+  end
+ 
+  def self.all
+    @@all
+  end
+  
+  def self.average_years_of_experience
+     self.all.each{ |yrs_experience| experience = yrs_experience.to_a }
+       experience.inject( |sum, years| sum + years /experience.size )
+  end
+  
+  def customers_names
+    
+  end
+  
+  def highest_tipper
+    
+  end
+  
+  def average_tips_most_expereinced
+    
+  end
+  
+  def average_tips_least_expereinced
+    
+  end
+ 
+end
+
+binding.pry
