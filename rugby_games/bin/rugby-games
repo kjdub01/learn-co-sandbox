@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
 
-require './lib/rugby_games'
+#require "./lib/rugby_games"
+
+require "bundler/setup"
+require "rugby_games"
+
 RugbyGames::CLI.new.call
