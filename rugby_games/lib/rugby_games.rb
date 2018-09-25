@@ -1,5 +1,2 @@
-require "rugby_games/version"
-
-module RugbyGames
-  # Your code goes here...
-end
+require_relative "./rugby_games/version"
+require_relative "./rugby_games/cli"
